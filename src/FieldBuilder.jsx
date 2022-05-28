@@ -13,7 +13,42 @@ const FieldBuilder = () => {
           <label htmlFor="label">
             Label
           </label>
-          <input id="label" type="text" value="" onChange="" />
+          <input id="label" type="text" />
+        </div>
+        <div>
+          <label htmlFor="type">
+            Type
+          </label>
+          <select name="order" id="order">
+            <option value="single">Single select</option>
+            <option value="multi">Multi-select</option>
+          </select>
+          <input id="type" type="checkbox" value="" onChange="" />A value is required
+        </div>
+        <div>
+          <label htmlFor="default-value">
+            Default Value
+          </label>
+          <input id="default-value" type="text" />
+        </div>
+        <div>
+          <label htmlFor="choices">
+            Choices
+          </label>
+          <input id="default-value" type="text" />
+        </div>
+        <div>
+          <label htmlFor="order">
+            Order
+          </label>
+          <select name="order" id="order">
+            <option value="desc">Alphabetical Decsending</option>
+            <option value="asc">Alphabetical Ascending</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">Save Changes</button>
+          <button type="">Cancel</button>
         </div>
       </form>
     </div>
