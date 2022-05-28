@@ -3,6 +3,11 @@ import React, { useState } from "react";
 // Constants?
 
 const FieldBuilder = () => {
+
+
+
+
+
   return (
     <div className="fieldbuilder-modal">
       <h2>
@@ -35,7 +40,9 @@ const FieldBuilder = () => {
           <label htmlFor="choices">
             Choices
           </label>
-          <input id="default-value" type="text" />
+          <input id="default-value" type="text" placeholder="new choice" />
+          <button>Add New Choice</button>
+          <ul id="choice-list"></ul>
         </div>
         <div>
           <label htmlFor="order">
