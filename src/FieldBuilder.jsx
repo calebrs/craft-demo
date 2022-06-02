@@ -76,7 +76,7 @@ const FieldBuilder = () => {
         Field Builder
       </h2>
       <form>
-        <div className="">
+        <div className="modal">
           <label htmlFor="label">
             Label
           </label>
@@ -99,7 +99,7 @@ const FieldBuilder = () => {
           <label htmlFor="choices">
             Choices
           </label>
-          <textarea name="choices" id="choices-textarea" cols="40" rows="10" value={choices} onChange={(e) => setChoices(e.target.value)}></textarea>
+          <textarea name="choices" id="choices-textarea" cols="30" rows="10" value={choices} onChange={(e) => setChoices(e.target.value)}></textarea>
         </div>
         <div className="">
           <label htmlFor="order">
@@ -110,7 +110,7 @@ const FieldBuilder = () => {
             <option value="false">Display choices in the order they were added</option>
           </select>
         </div>
-        <div className="">
+        <div className="buttons">
           <button type="submit" onClick={handleSubmit}>Save Changes</button>
           <button onClick={(e) => { e.preventDefault(); resetForm() }}>Clear Form</button>
           <button type="">Cancel</button>
